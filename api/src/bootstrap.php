@@ -10,4 +10,6 @@ require_once (BASE_DIR . '/vendor/rb.phar');
 $app = new Silex\Application();
 
 //-- Setup database access by redbeanphp
-R::setup(HOST,USER,PASS);
+//R::setup(HOST,USER,PASS);
+//to sqlite storage
+ R::setup( 'sqlite:/tmp/dbfile.db' );
